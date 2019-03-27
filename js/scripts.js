@@ -1,15 +1,19 @@
+var boughtTypewriter = 0;
+var boughtPiano = 0;
+var boughtCup = 0;
+
 $(document).ready(function(){
   $("button#typewriter").click(function(){
-    var boughtTypewriter = 1;
-    console.log(boughtTypewriter);
+    boughtTypewriter += 1;
+    console.log(boughtTypewriter + " typewriter");
   });
   $("button#piano").click(function(){
-    var boughtPiano = 1;
-    console.log(boughtPiano);
+    boughtPiano += 1;
+    console.log(boughtPiano + " piano");
   });
   $("button#cup").click(function(){
-    var boughtCup = 1;
-    console.log(boughtCup);
+    boughtCup += 1;
+    console.log(boughtCup + " cup");
   });
   $("#checkout").click(function(event){
     var name = $("input.firstName").val();
@@ -17,6 +21,9 @@ $(document).ready(function(){
 
     $('.firstName').text(name);
     $('.address').text(address);
+    $('.cup').text(boughtTypewriter + " typewriter");
+    $('.piano').text(boughtPiano + " piano");
+    $('.typewriter').text(boughtCup + " cup");
 
     $("#letter").show();
 

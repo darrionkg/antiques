@@ -18,8 +18,7 @@
     <button type="button" name="button" id="piano">Add to Cart</button>
     <img src="img/cup.jpeg" alt="cup">
     <button type="button" name="button" id="cup">Add to Cart</button>
-    <!-- Button for checkout -->
-    <button id="checkout" type="button" name="button">Checkout</button>
+
 
 
     <div id="blanks">
@@ -32,6 +31,8 @@
           <label for="address">Address:</label>
           <input class="address form-control" type="text">
         </div>
+        <!-- Button for checkout -->
+        <button id="checkout" type="button" name="button">Checkout</button>
       </form>
     </div>
     <!--Receipt -->
@@ -42,7 +43,12 @@
             <br>
             Dear <span class="firstName"></span> ,
             <p>
-             <br>Thank you for your purchase. It will be shipped to: <span class"address"></span>.
+             <br>Thank you for your purchase. It will be shipped to: <span class="address"></span>. You will receive
+             <ul>
+               <li class="typewriter"></li>
+               <li class="piano"></li>
+               <li class="cup"></li>
+             </ul>
           </p>
         </div>
       </div>
