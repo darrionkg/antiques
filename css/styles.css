@@ -1,3 +1,8 @@
 #letter {
   display: none;
 }
+
+#checkout {
+  position: absolute;
+  bottom: 25%;
+}
